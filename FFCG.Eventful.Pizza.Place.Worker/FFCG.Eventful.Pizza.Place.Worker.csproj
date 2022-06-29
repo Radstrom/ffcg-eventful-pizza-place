@@ -15,13 +15,16 @@
         <None Update="host.json">
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </None>
-        <None Update="local.settings.json">
-            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-            <CopyToPublishDirectory>Never</CopyToPublishDirectory>
-        </None>
     </ItemGroup>
     <ItemGroup>
-      <ProjectReference Include="..\FFCG.Eventful.Pizza.Place.Application\FFCG.Eventful.Pizza.Place.Application.csproj" />
-      <ProjectReference Include="..\FFCG.Eventful.Pizza.Place.ServiceBus\FFCG.Eventful.Pizza.Place.ServiceBus.csproj" />
+      <ProjectReference Include="..\FFCG.Eventful.Pizza.Place.Application\FFCG.Eventful.Pizza.Place.Application.csproj">
+        <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+      </ProjectReference>
+      <ProjectReference Include="..\FFCG.Eventful.Pizza.Place.ServiceBus\FFCG.Eventful.Pizza.Place.ServiceBus.csproj">
+        <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+      </ProjectReference>
+      <ProjectReference Include="..\FFCG.Eventful.Pizza.Place.Cosmos\FFCG.Eventful.Pizza.Place.Cosmos.csproj">
+        <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+      </ProjectReference>
     </ItemGroup>
 </Project>

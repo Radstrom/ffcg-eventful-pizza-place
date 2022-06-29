@@ -30,8 +30,8 @@ public class OrderController : ControllerBase
         var result = await _mediatrSender.Send(new GetAllOrdersQuery());
         return Ok(result);
     }
-    
-    [HttpGet]
+
+    [HttpGet("id")]
     public async Task<IActionResult> GetOrderById(Guid id)
     {
         var result = await _mediatrSender.Send(new GetOrderByIdQuery(id));

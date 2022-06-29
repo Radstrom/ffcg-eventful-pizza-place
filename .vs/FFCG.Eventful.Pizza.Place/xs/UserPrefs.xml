@@ -1,0 +1,67 @@
+﻿<Properties StartupConfiguration="{A3444CBF-EF12-43B8-BEE9-5A02D3D43185}|Default">
+  <MonoDevelop.Ide.ItemProperties.Worker.FFCG.Eventful.Pizza.Place.Worker PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="FFCG.Eventful.Pizza.Place.Worker/Program.cs">
+    <Files>
+      <File FileName="FFCG.Eventful.Pizza.Place.API/Controllers/OrderController.cs" Line="33" Column="1" />
+      <File FileName="FFCG.Eventful.Pizza.Place.ServiceBus/ServiceBusSenderService.cs" Line="1" Column="1" />
+      <File FileName="FFCG.Eventful.Pizza.Place.Cosmos/OrderProvider.cs" Line="6" Column="11" />
+      <File FileName="FFCG.Eventful.Pizza.Place.ServiceBus/Topics.cs" Line="1" Column="1" />
+      <File FileName="FFCG.Eventful.Pizza.Place.ServiceBus/Subjects.cs" Line="1" Column="1" />
+      <File FileName="FFCG.Eventful.Pizza.Place.Worker/Functions/CreateOrder3rdPartyMock/CreateOrderFunction.cs" Line="28" Column="10" />
+      <File FileName="FFCG.Eventful.Pizza.Place.Domain/Models/Order.cs" Line="7" Column="2" />
+      <File FileName="FFCG.Eventful.Pizza.Place.Worker/Functions/ProcessIncomingOrder/ProcessIncomingOrderFunction.cs" Line="30" Column="2" />
+      <File FileName="FFCG.Eventful.Pizza.Place.Application/Interfaces/IOrderProvider.cs" Line="5" Column="18" />
+      <File FileName="FFCG.Eventful.Pizza.Place.Worker/Program.cs" Line="39" Column="1" />
+      <File FileName="FFCG.Eventful.Pizza.Place.API/Program.cs" Line="24" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="FFCG.Eventful.Pizza.Place" expanded="True">
+            <Node name="API" expanded="True">
+              <Node name="FFCG.Eventful.Pizza.Place.API" expanded="True">
+                <Node name="Controllers" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="Application" expanded="True">
+              <Node name="FFCG.Eventful.Pizza.Place.Application" expanded="True">
+                <Node name="Interfaces" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="Domain" expanded="True">
+              <Node name="FFCG.Eventful.Pizza.Place.Domain" expanded="True">
+                <Node name="Models" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="Infrastructure" expanded="True">
+              <Node name="FFCG.Eventful.Pizza.Place.Cosmos" expanded="True" />
+              <Node name="FFCG.Eventful.Pizza.Place.ServiceBus" expanded="True" />
+            </Node>
+            <Node name="Worker" expanded="True">
+              <Node name="FFCG.Eventful.Pizza.Place.Worker" expanded="True">
+                <Node name="Program.cs" selected="True" />
+              </Node>
+              <Node name="FFCG.Eventful.Pizza.Place.Worker.Tests" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="FFCG.Eventful.Pizza.Place" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Application.FFCG.Eventful.Pizza.Place.Application.Tests PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.API.FFCG.Eventful.Pizza.Place.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
+</Properties>
