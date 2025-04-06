@@ -1,6 +1,4 @@
-using FFCG.Eventful.Pizza.Place.Domain.Models;
-
-namespace FFCG.Eventful.Pizza.Place.Application.Interfaces;
+namespace FFCG.Eventful.Pizza.Place.Domain.Interfaces;
 
 public interface IPizzaProvider
 {

@@ -1,6 +1,6 @@
 using System.Net.Mime;
 using Azure.Messaging.ServiceBus;
-using FFCG.Eventful.Pizza.Place.Application.Interfaces;
+using FFCG.Eventful.Pizza.Place.Domain.Interfaces;
 
 namespace FFCG.Eventful.Pizza.Place.ServiceBus;
 

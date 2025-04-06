@@ -1,6 +1,6 @@
 using System;
 using System.Threading.Tasks;
-using FFCG.Eventful.Pizza.Place.Application.Interfaces;
+using FFCG.Eventful.Pizza.Place.Domain.Interfaces;
 using FFCG.Eventful.Pizza.Place.Domain.Models;
 using FFCG.Eventful.Pizza.Place.ServiceBus;
 using Microsoft.Azure.Functions.Worker;

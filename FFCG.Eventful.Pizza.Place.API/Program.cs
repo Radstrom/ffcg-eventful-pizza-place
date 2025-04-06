@@ -1,8 +1,7 @@
 using Azure.Messaging.ServiceBus;
 using FFCG.Eventful.Pizza.Place.Application.Features.CreateNewOrder;
-using FFCG.Eventful.Pizza.Place.Application.Interfaces;
 using FFCG.Eventful.Pizza.Place.Cosmos;
-using FFCG.Eventful.Pizza.Place.Cosmos.Providers;
+using FFCG.Eventful.Pizza.Place.Domain.Interfaces;
 using FFCG.Eventful.Pizza.Place.Domain.Services;
 using MediatR;
 using Microsoft.Azure.Cosmos;
@@ -48,4 +47,9 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-app.Run();
+await app.RunAsync();
+
+namespace FFCG.Eventful.Pizza.Place.API
+{
+	public partial class Program { }
+}

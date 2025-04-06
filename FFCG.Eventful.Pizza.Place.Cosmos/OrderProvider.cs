@@ -1,9 +1,9 @@
-using FFCG.Eventful.Pizza.Place.Application.Interfaces;
+using FFCG.Eventful.Pizza.Place.Domain.Interfaces;
 using FFCG.Eventful.Pizza.Place.Domain.Models;
 using Microsoft.Azure.Cosmos;
 using Microsoft.Azure.Cosmos.Linq;
 
-namespace FFCG.Eventful.Pizza.Place.Cosmos.Providers;
+namespace FFCG.Eventful.Pizza.Place.Cosmos;
 
 public class OrderProvider : IOrderProvider
 {

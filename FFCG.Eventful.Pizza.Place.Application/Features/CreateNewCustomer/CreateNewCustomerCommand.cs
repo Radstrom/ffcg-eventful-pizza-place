@@ -1,4 +1,4 @@
-using FFCG.Eventful.Pizza.Place.Application.Interfaces;
+using FFCG.Eventful.Pizza.Place.Domain.Interfaces;
 using FFCG.Eventful.Pizza.Place.Domain.Models;
 using MediatR;
 
@@ -6,11 +6,11 @@ namespace FFCG.Eventful.Pizza.Place.Application.Features.CreateNewCustomer;
 
 public record CreateNewCustomerCommand(string Name, string Email, string PhoneNumber) : IRequest<Customer>;
 
-public class CreateNewCustomerHandler(ICustomerProvider _provider) : IRequestHandler<CreateNewCustomerCommand, Customer>
+public class CreateNewCustomerHandler(ICustomerProvider provider) : IRequestHandler<CreateNewCustomerCommand, Customer>
 {
     public async Task<Customer> Handle(CreateNewCustomerCommand request, CancellationToken cancellationToken)
     {
-        return await _provider.UpsertCustomer(new Customer()
+        return await provider.UpsertCustomer(new Customer()
         {
             Name = request.Name,
             Email = request.Email,
