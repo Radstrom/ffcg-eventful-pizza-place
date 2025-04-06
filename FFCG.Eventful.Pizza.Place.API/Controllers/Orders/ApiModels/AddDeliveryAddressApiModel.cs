@@ -1,6 +1,6 @@
 using FFCG.Eventful.Pizza.Place.Domain.Models;
 
-namespace FFCG.Eventful.Pizza.Place.Controllers.Orders.ApiModels;
+namespace FFCG.Eventful.Pizza.Place.API.Controllers.Orders.ApiModels;
 
 public record AddDeliveryAddressToOrderApiModel(string Street, string StreetNumber, string ZipCode, string City, string Country)
 {

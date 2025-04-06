@@ -1,4 +1,4 @@
-using FFCG.Eventful.Pizza.Place.Application.Interfaces;
+using FFCG.Eventful.Pizza.Place.Domain.Interfaces;
 using FFCG.Eventful.Pizza.Place.Domain.Models;
 using MediatR;
 
@@ -9,11 +9,11 @@ public class CreateNewOrderCommand : IRequest<Order>
 
 }
 
-public class CreateNewOrderHandler(IOrderProvider _orderProvider) : IRequestHandler<CreateNewOrderCommand, Order>
+public class CreateNewOrderHandler(IOrderProvider orderProvider) : IRequestHandler<CreateNewOrderCommand, Order>
 {
     public async Task<Order> Handle(CreateNewOrderCommand request, CancellationToken cancellationToken)
     {
-        var result = await _orderProvider.UpsertOrder(new Order());
+        var result = await orderProvider.UpsertOrder(new Order());
 
         return result;
     }

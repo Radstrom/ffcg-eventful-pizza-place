@@ -1,8 +1,8 @@
-using FFCG.Eventful.Pizza.Place.Application.Interfaces;
+using FFCG.Eventful.Pizza.Place.Domain.Interfaces;
 using FFCG.Eventful.Pizza.Place.Domain.Models;
 using MediatR;
 
-namespace FFCG.Eventful.Pizza.Place.Application.Features.GetAllOrdersQuery;
+namespace FFCG.Eventful.Pizza.Place.Application.Features.GetAllOrders;
 
 public class GetAllOrdersQuery : IRequest<IEnumerable<Order>>
 {

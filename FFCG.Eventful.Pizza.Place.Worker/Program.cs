@@ -1,5 +1,5 @@
 using System;
-using FFCG.Eventful.Pizza.Place.Application.Interfaces;
+using FFCG.Eventful.Pizza.Place.Domain.Interfaces;
 using FFCG.Eventful.Pizza.Place.ServiceBus;
 using Microsoft.Extensions.Azure;
 using Microsoft.Extensions.DependencyInjection;

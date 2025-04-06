@@ -4,7 +4,7 @@
         <TargetFramework>net8.0</TargetFramework>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
-        <RootNamespace>FFCG.Eventful.Pizza.Place</RootNamespace>
+        <RootNamespace>FFCG.Eventful.Pizza.Place.API</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
@@ -16,6 +16,7 @@
     </ItemGroup>
 
     <ItemGroup>
+		<InternalsVisibleTo Include="FFCG.Eventful.Pizza.Place.API.Functional.Tests" />
       <ProjectReference Include="..\FFCG.Eventful.Pizza.Place.Application\FFCG.Eventful.Pizza.Place.Application.csproj" />
       <ProjectReference Include="..\FFCG.Eventful.Pizza.Place.Cosmos\FFCG.Eventful.Pizza.Place.Cosmos.csproj" />
       <ProjectReference Include="..\FFCG.Eventful.Pizza.Place.Domain\FFCG.Eventful.Pizza.Place.Domain.csproj" />
