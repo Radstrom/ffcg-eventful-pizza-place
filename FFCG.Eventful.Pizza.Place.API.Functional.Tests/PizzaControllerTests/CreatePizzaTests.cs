@@ -1,6 +1,8 @@
+using System.Net;
 using System.Net.Http.Json;
 using FFCG.Eventful.Pizza.Place.API.Controllers.Pizzas.ApiModels;
 using FFCG.Eventful.Pizza.Place.API.Functional.Tests.Common;
+using Shouldly;
 
 namespace FFCG.Eventful.Pizza.Place.API.Functional.Tests.PizzaControllerTests;
 
@@ -21,11 +23,12 @@ public class CreatePizzaTests : TestDataSetUp
 
 		// Act
 		var response = await Client.PostAsJsonAsync(
-			$"pizzas/",
+			"pizzas/",
 			pizza);
 
 		// Assert
 		response.EnsureSuccessStatusCode();
+		response.StatusCode.ShouldBe(HttpStatusCode.Created);
 	}
 
 	[Test]

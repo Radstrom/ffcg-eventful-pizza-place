@@ -32,6 +32,11 @@ public class OrderController(ISender mediatrSender) : ControllerBase
     [Route("{id:guid}")]
     public async Task<IActionResult> GetOrderById(Guid id)
     {
+	    if (id == Guid.Empty)
+	    {
+		    return BadRequest();
+	    }
+
         var result = await mediatrSender.Send(new GetOrderByIdQuery(id));
         return Ok(result);
     }
