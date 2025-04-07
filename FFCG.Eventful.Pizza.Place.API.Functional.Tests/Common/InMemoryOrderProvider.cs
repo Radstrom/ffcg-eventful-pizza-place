@@ -19,6 +19,7 @@ public class InMemoryOrderProvider(IEnumerable<Order> items) : IOrderProvider
 
 	public Task<Order> UpsertOrder(Order order)
 	{
+		Items.Remove(Items.SingleOrDefault(x => x.Id == order.Id));
 		Items.Add(order);
 		return Task.FromResult(order);
 	}

@@ -43,18 +43,4 @@ public class GetOrderByIdTests : TestDataSetUp
 		response.ShouldNotBeNull();
 		response.Id.ShouldBe(order.Id);
 	}
-
-	[Test]
-	public async Task Should_Get_Order_By_Id2()
-	{
-		// Arrange
-		var order = Orders.First();
-
-		// Act
-		var response = await Client.GetFromJsonAsync<Order>($"orders/{order.Id}");
-
-		// Assert
-		response.ShouldNotBeNull();
-		response.Id.ShouldBe(order.Id);
-	}
 }
