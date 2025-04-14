@@ -1,4 +1,5 @@
 using Azure.Messaging.ServiceBus;
+using FFCG.Eventful.Pizza.Place.API.Middlewares;
 using FFCG.Eventful.Pizza.Place.Application.Features.CreateNewOrder;
 using FFCG.Eventful.Pizza.Place.Cosmos;
 using FFCG.Eventful.Pizza.Place.Domain.Interfaces;
@@ -40,6 +41,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseMiddleware<ExceptionHandlingMiddleware>();
 
 app.UseHttpsRedirection();
 

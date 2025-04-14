@@ -1,3 +1,4 @@
+using FFCG.Eventful.Pizza.Place.Domain.Exceptions;
 using FFCG.Eventful.Pizza.Place.Domain.Interfaces;
 using FFCG.Eventful.Pizza.Place.Domain.Models;
 using MediatR;
@@ -26,6 +27,11 @@ public class GetOrderByIdHandler : IRequestHandler<GetOrderByIdQuery, Order>
     public async Task<Order> Handle(GetOrderByIdQuery request, CancellationToken cancellationToken)
     {
         var result = await _orderProvider.GetOrderById(request.Id);
+
+        if (result == null)
+        {
+	        throw new NotFoundException("Order not found");
+        }
 
         return result;
     }
